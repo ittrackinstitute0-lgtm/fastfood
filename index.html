@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawera & Mehwish | Fine Dining & Online Food Ordering</title>
+    <meta name="description" content="Experience authentic royal Pakistani & Continental cuisine at Sawera & Mehwish. Order online for fast home delivery or reserve your table today!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP NOTIFICATION BANNER -->
+    <div class="top-announcement">
+        <div class="container announcement-content">
+            <span><i class="fa-solid fa-bell"></i> <strong>Special Offer:</strong> Use code <mark>WELCOME10</mark> for 10% OFF on your first online order!</span>
+            <div class="announcement-links">
+                <span><i class="fa-solid fa-phone"></i> +92 300 1234567</span>
+                <span><i class="fa-solid fa-clock"></i> 12:00 PM - 01:00 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="site-header" id="header">
+        <div class="container navbar">
+            <a href="#home" class="brand-logo">
+                <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Sawera & Mehwish</span>
+                    <span class="brand-tagline">Royal Dining & Kitchen</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#specials" class="nav-link">Specials</a></li>
+                    <li><a href="#menu" class="nav-link">Menu & Order</a></li>
+                    <li><a href="#reservation" class="nav-link">Reserve Table</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Controls -->
+            <div class="nav-actions">
+                <button class="icon-btn search-trigger" id="searchBtn" aria-label="Search Dishes" title="Search Menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                
+                <button class="cart-btn" id="openCartBtn" aria-label="Open Cart" title="View Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                    <span class="cart-btn-total" id="cartBtnTotal">Rs. 0</span>
+                </button>
+
+                <a href="#reservation" class="btn btn-primary nav-cta">Book Table</a>
+
+                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Collapsible Search Bar -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="container search-bar-container">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="menuSearchInput" placeholder="Search for Biryani, Karahi, Kebabs, Desserts, Mocktails...">
+                <button class="close-search-btn" id="closeSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-award"></i> The Royal Taste of Authentic Flavors
+                </div>
+                <h1 class="hero-title">
+                    Gourmet Dining & <br>
+                    <span class="highlight-gold">Direct Online Ordering</span>
+                </h1>
+                <p class="hero-description">
+                    Welcome to <strong>Sawera & Mehwish</strong> — where centuries of heritage culinary artistry meet pure, premium ingredients. Indulge in sizzling kebabs, aromatic dum biryanis, slow-cooked royal gravies, and handcrafted desserts delivered fresh to your doorstep.
+                </p>
+                
+                <div class="hero-cta-group">
+                    <a href="#menu" class="btn btn-accent btn-lg pulse-glow">
+                        <i class="fa-solid fa-utensils"></i> Order Online Now
+                    </a>
+                    <a href="#reservation" class="btn btn-secondary btn-lg">
+                        <i class="fa-regular fa-calendar-check"></i> Book a Table
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4.9 <i class="fa-solid fa-star"></i></span>
+                        <span class="stat-label">2,500+ Google Reviews</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">30 - 45 min</span>
+                        <span class="stat-label">Fast Temperature-Safe Delivery</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Halal & Fresh Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card-floating top-badge">
+                    <div class="floating-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <div>
+                        <div class="fw-bold">Chef's Signature Karahi</div>
+                        <small class="text-muted">Freshly Spiced & Sizzling</small>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Delicious Gourmet Feast at Sawera & Mehwish" class="hero-main-img">
+                </div>
+
+                <div class="hero-card-floating bottom-badge">
+                    <div class="floating-icon check-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <div class="fw-bold">Hygiene Certified</div>
+                        <small class="text-muted">100% Contactless Safety</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES / FEATURES RIBBON -->
+    <section class="features-ribbon">
+        <div class="container ribbon-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                <div class="feature-info">
+                    <h4>Authentic Secret Spices</h4>
+                    <p>Ground daily for rich, royal aroma</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                <div class="feature-info">
+                    <h4>Express Hot Delivery</h4>
+                    <p>Delivered piping hot in insulated bags</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+                <div class="feature-info">
+                    <h4>Master Executive Chefs</h4>
+                    <p>Decades of culinary perfection</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+                <div class="feature-info">
+                    <h4>Easy & Secure Checkout</h4>
+                    <p>Cash on Delivery, Cards & Mobile Wallets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image-column">
+                <div class="about-img-frame">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Sawera and Mehwish Luxury Ambiance" class="about-main-img">
+                    <div class="experience-badge">
+                        <span class="years">15+</span>
+                        <span class="text">Years of Culinary Royalty</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content-column">
+                <span class="section-subtitle">Our Heritage & Story</span>
+                <h2 class="section-title">A Symphony of Spices Crafted with Passion</h2>
+                <p class="about-lead">
+                    Founded by visionary culinary artisans, <strong>Sawera & Mehwish</strong> was born with a singular mission: to bring the regal grandeur of traditional Mughal and contemporary desi gastronomy to life.
+                </p>
+                <p class="about-text">
+                    Every recipe at our kitchen is treated as an ancestral heirloom. From hand-selected saffron and slow-aged basmati rice to grass-fed meats and farm-fresh organic dairy, we believe true taste comes from uncompromising quality and pure devotion.
+                </p>
+
+                <div class="about-highlights-list">
+                    <div class="about-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Traditional Clay Oven (Tandoor) & Coal Grilling</span>
+                    </div>
+                    <div class="about-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Family-Friendly Luxury Ambiance & Private Dining</span>
+                    </div>
+                    <div class="about-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Seamless E-Commerce Delivery & WhatsApp Support</span>
+                    </div>
+                </div>
+
+                <div class="about-author-row">
+                    <div class="author-meta">
+                        <h4>Sawera & Mehwish</h4>
+                        <span>Founders & Master Culinary Curators</span>
+                    </div>
+                    <div class="signature">
+                        <em>Sawera & Mehwish</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHEF SPECIALS SECTION -->
+    <section class="specials-section" id="specials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Signature Masterpieces</span>
+                <h2 class="section-title">Chef's Handpicked Specials</h2>
+                <div class="title-divider"><i class="fa-solid fa-star"></i></div>
+                <p class="section-desc">Handcrafted signature dishes celebrated by food critics and cherished by thousands of families.</p>
+            </div>
+
+            <div class="specials-grid" id="specialsContainer">
+                <!-- Injected via JavaScript dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MENU & E-COMMERCE ORDERING SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Foodie's Paradise</span>
+                <h2 class="section-title">Explore Our Full Menu</h2>
+                <div class="title-divider"><i class="fa-solid fa-utensils"></i></div>
+                <p class="section-desc">Select your favorites, customize quantity, and order directly for instant pickup or door-to-door delivery.</p>
+            </div>
+
+            <!-- Category Filtering Tabs -->
+            <div class="category-tabs-wrapper">
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="cat-tab active" data-category="all">
+                        <i class="fa-solid fa-bowl-food"></i> All Items
+                    </button>
+                    <button class="cat-tab" data-category="starters">
+                        <i class="fa-solid fa-seedling"></i> Starters & Chaat
+                    </button>
+                    <button class="cat-tab" data-category="karahi">
+                        <i class="fa-solid fa-fire"></i> Royal Karahi & Handi
+                    </button>
+                    <button class="cat-tab" data-category="bbq">
+                        <i class="fa-solid fa-drumstick-bite"></i> BBQ & Kebabs
+                    </button>
+                    <button class="cat-tab" data-category="rice">
+                        <i class="fa-solid fa-wheat-awn"></i> Dum Biryani & Breads
+                    </button>
+                    <button class="cat-tab" data-category="desserts">
+                        <i class="fa-solid fa-ice-cream"></i> Sweet Delights
+                    </button>
+                    <button class="cat-tab" data-category="drinks">
+                        <i class="fa-solid fa-martini-glass-citrus"></i> Mocktails & Drinks
+                    </button>
+                </div>
+            </div>
+
+            <!-- Active Filters and Search Status -->
+            <div class="menu-control-bar">
+                <div class="filter-toggles">
+                    <label class="filter-pill">
+                        <input type="checkbox" id="filterSpicyOnly">
+                        <span class="pill-check"><i class="fa-solid fa-fire"></i> Spicy Only</span>
+                    </label>
+                    <label class="filter-pill">
+                        <input type="checkbox" id="filterVegOnly">
+                        <span class="pill-check"><i class="fa-solid fa-leaf"></i> Vegetarian</span>
+                    </label>
+                    <label class="filter-pill">
+                        <input type="checkbox" id="filterBestSellerOnly">
+                        <span class="pill-check"><i class="fa-solid fa-trophy"></i> Best Sellers</span>
+                    </label>
+                </div>
+
+                <div class="menu-counter">
+                    Showing <span id="dishCountDisplay">0</span> dishes
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="dishes-grid" id="dishesContainer">
+                <!-- Dishes populated via JavaScript -->
+            </div>
+
+            <!-- Empty State if no dishes found -->
+            <div class="no-dishes-state" id="noDishesState" style="display: none;">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>No dishes match your current filter</h3>
+                <p>Try searching for another dish or reset your filters.</p>
+                <button class="btn btn-secondary mt-3" id="resetFiltersBtn">Reset All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMO DEALS BANNER -->
+    <section class="deals-banner">
+        <div class="container deals-container">
+            <div class="deals-content">
+                <span class="deal-pill">Limited Time Weekend Fest</span>
+                <h2>The Royal Family Feast Platter</h2>
+                <p>Includes Full Mutton Shinwari Karahi, Chicken Malai Boti, Seekh Kebabs, Roghani Naans, Mint Raita, Special Matka Kheer & Pitcher of Mint Lemonade.</p>
+                <div class="deal-price-row">
+                    <span class="old-price">Rs. 6,800</span>
+                    <span class="new-price">Rs. 4,999</span>
+                    <span class="discount-tag">Save 26%</span>
+                </div>
+                <button class="btn btn-accent btn-lg" onclick="app.addDealToCart()">
+                    <i class="fa-solid fa-cart-plus"></i> Add Feast to Cart
+                </button>
+            </div>
+            <div class="deals-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Royal Family Feast Platter">
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLE RESERVATION SECTION -->
+    <section class="reservation-section" id="reservation">
+        <div class="container reservation-container">
+            <div class="reservation-info-col">
+                <span class="section-subtitle">Dine In Elegance</span>
+                <h2 class="section-title">Reserve a Table at Sawera & Mehwish</h2>
+                <p class="reservation-desc">
+                    Whether you are planning an intimate candle-light dinner, an executive business lunch, or a grand family reunion, our welcoming ambiance and personalized hospitality guarantee an unforgettable dining experience.
+                </p>
+
+                <div class="reservation-perks">
+                    <div class="perk-item">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <div>
+                            <h5>Complimentary Welcome Drinks</h5>
+                            <small>Enjoy fresh mint welcome coolers upon your arrival.</small>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <h5>Dedicated Family & Private Halls</h5>
+                            <small>Quiet, spacious booths with attentive table service.</small>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <div>
+                            <h5>Birthday & Anniversary Surprises</h5>
+                            <small>Mention your special occasion in notes for custom table decor.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="direct-call-box">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <span>Prefer direct booking assistance?</span>
+                        <h4>Call Our VIP Concierge: +92 300 1234567</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reservation-form-col">
+                <div class="reservation-form-card">
+                    <h3>Book Your Experience</h3>
+                    <p>Instant table confirmation via SMS & WhatsApp</p>
+
+                    <form id="reservationForm" onsubmit="app.handleReservationSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resName"><i class="fa-regular fa-user"></i> Full Name *</label>
+                                <input type="text" id="resName" required placeholder="e.g. Sawera Khan">
+                            </div>
+                            <div class="form-group">
+                                <label for="resPhone"><i class="fa-solid fa-phone"></i> Mobile Number *</label>
+                                <input type="tel" id="resPhone" required placeholder="e.g. 0300 1234567">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resDate"><i class="fa-regular fa-calendar"></i> Date *</label>
+                                <input type="date" id="resDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resTime"><i class="fa-regular fa-clock"></i> Preferred Time *</label>
+                                <select id="resTime" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="12:30 PM">12:30 PM (Lunch)</option>
+                                    <option value="01:30 PM">01:30 PM (Lunch)</option>
+                                    <option value="03:00 PM">03:00 PM (Late Lunch)</option>
+                                    <option value="07:30 PM">07:30 PM (Dinner)</option>
+                                    <option value="08:30 PM">08:30 PM (Dinner)</option>
+                                    <option value="09:30 PM">09:30 PM (Prime Dinner)</option>
+                                    <option value="11:00 PM">11:00 PM (Late Night)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resGuests"><i class="fa-solid fa-user-group"></i> Total Guests *</label>
+                                <select id="resGuests" required>
+                                    <option value="2">2 Persons (Couple Table)</option>
+                                    <option value="4" selected>4 Persons (Standard Table)</option>
+                                    <option value="6">6 Persons (Family Table)</option>
+                                    <option value="8">8 Persons (Large Table)</option>
+                                    <option value="12+">12+ Persons (Private Hall)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="resArea"><i class="fa-solid fa-couch"></i> Seating Preference</label>
+                                <select id="resArea">
+                                    <option value="Main Dining Hall">Main Royal Dining Hall</option>
+                                    <option value="Rooftop Terrace">Starlit Rooftop Terrace</option>
+                                    <option value="Private Family Lounge">Private Family Lounge</option>
+                                    <option value="Window Seat">Garden View Window Seat</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resNotes"><i class="fa-regular fa-message"></i> Special Requests (Optional)</label>
+                            <textarea id="resNotes" rows="2" placeholder="e.g. Anniversary celebration, high chair for toddler, less spicy food preference..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-block btn-lg">
+                            <i class="fa-solid fa-check-circle"></i> Confirm Table Reservation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / REVIEWS SECTION -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Praise & Love</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="title-divider"><i class="fa-solid fa-heart"></i></div>
+                <p class="section-desc">Real stories from our patrons who celebrated flavor and hospitality with us.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "The Mutton Shinwari Karahi at Sawera & Mehwish is completely on another level! Perfectly tender meat, authentic fresh fat gravy, and crisp Roghani Naans. The online delivery arrived sizzling hot in under 35 minutes!"
+                    </p>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">ZK</div>
+                        <div>
+                            <h4>Zeeshan Khalid</h4>
+                            <small>Food Critic & Verified Customer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card featured-review">
+                    <div class="badge-featured"><i class="fa-solid fa-crown"></i> Top Review</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "We celebrated my mother's 60th birthday in the private family lounge. The ambiance, royal hospitality, and live BBQ were beyond exceptional. Sawera & Mehwish hospitality is truly heartwarming!"
+                    </p>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">AN</div>
+                        <div>
+                            <h4>Ayesha Noor</h4>
+                            <small>Family Gathering Organizer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "Best Dum Biryani in town! The aroma alone fills the room. Their online ordering is so smooth and having the option to confirm via WhatsApp makes everything super convenient."
+                    </p>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">MB</div>
+                        <div>
+                            <h4>Muhammad Bilal</h4>
+                            <small>Regular Corporate Client</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info-panel">
+                <span class="section-subtitle">Reach Out To Us</span>
+                <h2 class="section-title">Visit or Get in Touch</h2>
+                <p>We are always thrilled to welcome you. Visit our restaurant or connect for catering inquiries, family events, and online order queries.</p>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h5>Restaurant Location</h5>
+                            <p>Plot 42-B, Main Boulevard, Gulberg III / Defense Avenue, Lahore, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <h5>Phone & WhatsApp Order Hotline</h5>
+                            <p>+92 300 1234567 / +92 42 35789000</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h5>Email Address</h5>
+                            <p>orders@sawera-mehwish.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h5>Working Hours</h5>
+                            <p>Monday - Sunday: 12:00 PM to 01:00 AM (Non-stop kitchen)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-row">
+                    <span>Follow Our Kitchen:</span>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <div class="contact-card">
+                    <h3>Send a Direct Message</h3>
+                    <form id="contactForm" onsubmit="app.handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" required placeholder="Catering, Feedback, or Special Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMsg">Message</label>
+                            <textarea id="contactMsg" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Sawera & Mehwish</span>
+                </div>
+                <p class="footer-about">
+                    Preserving the royal culinary traditions of Pakistani cuisine. Fresh ingredients, time-honored slow-cooking methods, and luxurious hospitality designed for life's sweetest celebrations.
+                </p>
+                <div class="halal-certified-badge">
+                    <i class="fa-solid fa-certificate"></i> 100% Certified Halal & Hygienic
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story & Kitchen</a></li>
+                    <li><a href="#menu">Online Menu & Prices</a></li>
+                    <li><a href="#specials">Chef's Signature Dishes</a></li>
+                    <li><a href="#reservation">Table Reservation</a></li>
+                    <li><a href="#contact">Contact & Delivery Zone</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Popular Delights</h4>
+                <ul class="footer-links">
+                    <li><a href="#menu">Mutton Shinwari Karahi</a></li>
+                    <li><a href="#menu">Special Dum Biryani</a></li>
+                    <li><a href="#menu">Reshmi Chicken Malai Boti</a></li>
+                    <li><a href="#menu">Tandoori Garlic Roghani Naan</a></li>
+                    <li><a href="#menu">Shahi Matka Kheer & Gulab Jamun</a></li>
+                    <li><a href="#menu">Mint Margarita & Falooda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter & Deals</h4>
+                <p>Subscribe to receive secret weekend discounts, complimentary dessert vouchers, and holiday updates!</p>
+                <form class="newsletter-form" onsubmit="app.handleNewsletter(event)">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fa-solid fa-money-bill-1-wave" title="Cash on Delivery"></i>
+                        <i class="fa-brands fa-cc-visa" title="Visa Card"></i>
+                        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fa-solid fa-mobile-screen" title="JazzCash & EasyPaisa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 <strong>Sawera & Mehwish Restaurant</strong>. All Rights Reserved. Crafted with passion & flavor.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Delivery Guarantee</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT SHOPPING CART DRAWER -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+        <div class="cart-drawer-header">
+            <div class="cart-drawer-title">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>Your Food Basket</h3>
+                <span class="cart-count-pill" id="cartDrawerCount">0 items</span>
+            </div>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div class="cart-drawer-body" id="cartItemsContainer">
+            <!-- Dynamically populated or empty state shown -->
+        </div>
+
+        <!-- Cart Summary & Actions (Visible when items > 0) -->
+        <div class="cart-drawer-footer" id="cartFooter">
+            <!-- Promo Code Accordion -->
+            <div class="promo-box">
+                <input type="text" id="promoInput" placeholder="Enter coupon code (try WELCOME10)">
+                <button type="button" class="btn btn-outline btn-sm" id="applyPromoBtn">Apply</button>
+            </div>
+            <div class="promo-feedback" id="promoFeedback"></div>
+
+            <div class="cart-summary-calculations">
+                <div class="calc-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">Rs. 0</span>
+                </div>
+                <div class="calc-row discount-row" id="discountRow" style="display: none;">
+                    <span>Promo Discount:</span>
+                    <span id="cartDiscount">- Rs. 0</span>
+                </div>
+                <div class="calc-row">
+                    <span>Delivery Charge:</span>
+                    <span id="cartDelivery">Rs. 150</span>
+                </div>
+                <div class="calc-row total-row">
+                    <span>Total Amount:</span>
+                    <span class="total-amount" id="cartGrandTotal">Rs. 0</span>
+                </div>
+            </div>
+
+            <div class="cart-footer-actions">
+                <button class="btn btn-accent btn-block btn-lg" id="proceedCheckoutBtn">
+                    <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+                </button>
+                <button class="btn btn-link btn-block text-muted" id="clearCartBtn">
+                    <i class="fa-regular fa-trash-can"></i> Clear Basket
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-backdrop" id="checkoutModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-wrap">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h3>Complete Your Food Order</h3>
+                    </div>
+                    <button class="modal-close-btn" id="closeCheckoutBtn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="checkoutForm" onsubmit="app.handleOrderSubmit(event)">
+                        <!-- Delivery vs Pickup Switch -->
+                        <div class="order-type-switch">
+                            <label class="switch-option">
+                                <input type="radio" name="orderType" value="delivery" checked onchange="app.toggleOrderType(this.value)">
+                                <div class="switch-card">
+                                    <i class="fa-solid fa-motorcycle"></i>
+                                    <strong>Home Delivery</strong>
+                                    <small>30 - 45 Mins</small>
+                                </div>
+                            </label>
+                            <label class="switch-option">
+                                <input type="radio" name="orderType" value="takeaway" onchange="app.toggleOrderType(this.value)">
+                                <div class="switch-card">
+                                    <i class="fa-solid fa-store"></i>
+                                    <strong>Takeaway / Self Pickup</strong>
+                                    <small>15 - 20 Mins</small>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Customer Information -->
+                        <div class="checkout-section-title">
+                            <i class="fa-solid fa-user-circle"></i> Contact & Delivery Details
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custName">Customer Full Name *</label>
+                                <input type="text" id="custName" required placeholder="e.g. Mehwish Tariq">
+                            </div>
+                            <div class="form-group">
+                                <label for="custPhone">Active Phone / WhatsApp *</label>
+                                <input type="tel" id="custPhone" required placeholder="0300 1234567">
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="deliveryAddressGroup">
+                            <label for="custAddress">Full Street & House Address *</label>
+                            <input type="text" id="custAddress" required placeholder="House/Flat #, Street, Block, Area, Lahore">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custInstructions">Kitchen / Delivery Instructions (Optional)</label>
+                            <input type="text" id="custInstructions" placeholder="e.g. Extra raita, mild spice, ring bell twice...">
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="checkout-section-title mt-4">
+                            <i class="fa-solid fa-credit-card"></i> Choose Payment Method
+                        </div>
+
+                        <div class="payment-method-options">
+                            <label class="pay-option">
+                                <input type="radio" name="payMethod" value="COD" checked>
+                                <div class="pay-card">
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+                                    <div>
+                                        <strong>Cash on Delivery (COD)</strong>
+                                        <small>Pay directly to the rider with cash</small>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="pay-option">
+                                <input type="radio" name="payMethod" value="JazzCash/EasyPaisa">
+                                <div class="pay-card">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <div>
+                                        <strong>JazzCash / EasyPaisa / Raast</strong>
+                                        <small>Instant mobile account transfer</small>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="pay-option">
+                                <input type="radio" name="payMethod" value="Credit/Debit Card">
+                                <div class="pay-card">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <div>
+                                        <strong>Credit / Debit Card on Delivery</strong>
+                                        <small>Rider brings portable POS card machine</small>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Order Summary Box -->
+                        <div class="checkout-order-summary">
+                            <div class="summary-line">
+                                <span>Items in Basket:</span>
+                                <strong id="modalSummaryItems">0 items</strong>
+                            </div>
+                            <div class="summary-line highlight-total">
+                                <span>Total Payable Amount:</span>
+                                <strong id="modalSummaryTotal">Rs. 0</strong>
+                            </div>
+                        </div>
+
+                        <div class="checkout-action-buttons">
+                            <button type="submit" class="btn btn-accent btn-lg btn-block">
+                                <i class="fa-solid fa-check"></i> Confirm & Place Order Now
+                            </button>
+                            <button type="button" class="btn btn-whatsapp btn-block" onclick="app.orderViaWhatsAppDirect()">
+                                <i class="fa-brands fa-whatsapp"></i> Order Directly via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS CONFIRMATION MODAL -->
+    <div class="modal-backdrop" id="orderSuccessModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center p-4">
+                <div class="success-animation-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="mt-3">Order Confirmed!</h3>
+                <p class="text-muted">Thank you for ordering with <strong>Sawera & Mehwish</strong>.</p>
+                <div class="order-receipt-box" id="orderReceiptBox">
+                    <!-- Populated dynamically -->
+                </div>
+                <p class="small text-muted mt-2">
+                    Our master chefs have received your order and are preparing it fresh. Our rider will reach your address promptly!
+                </p>
+                <div class="mt-4">
+                    <button class="btn btn-primary btn-block" onclick="app.closeSuccessModal()">
+                        Continue Browsing Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923001234567?text=Hello%20Sawera%20%26%20Mehwish%20Restaurant,%20I%20would%20like%20to%20inquire%20about%20your%20menu" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Order on WhatsApp</span>
+    </a>
+
+    <!-- TOAST NOTIFICATIONS -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="js/app.js"></script>
+</body>
+</html>
